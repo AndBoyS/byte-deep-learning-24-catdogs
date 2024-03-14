@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "byte-deep-learning-24-catdogs"
+version = "0.1.0"
+description = ""
+authors = ["AndBoyS <andboyxd@gmail.com>"]
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "~3.11"
+torch = "^2.2.1"
+jupyter = "^1.0.0"
+mypy = "^1.9.0"
+ruff = "^0.3.2"
+pillow = "^10.2.0"
+types-Pillow = "^10.2.0.20240311"
+types-tqdm = "^4.66.0.20240106"
+tqdm = "^4.66.2"
+numpy = "^1.26.4"
+torchvision = "^0.17.1"
+matplotlib = "^3.8.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
