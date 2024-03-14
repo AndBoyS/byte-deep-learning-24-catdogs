@@ -59,7 +59,6 @@ class Trainer:
         criterion: torch.nn.modules.loss._Loss,
         train_loader: DataLoader,
         val_loader: DataLoader | None = None,
-        batch_size: int = 128,
     ):
         self.model = model
 
@@ -69,8 +68,7 @@ class Trainer:
         self.train_loader = train_loader
         self.val_loader = val_loader
 
-        self.batch_size = batch_size
-
+        # Вместо списков метрик удобнее использовать tensorboard
         self.train_losses: list[float] = []
         self.train_accs: list[float] = []
         self.val_accs: list[float] = []
